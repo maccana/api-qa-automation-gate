@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "id": "2",
+      "name": "Maddie O'Malley",
+      "email": "her@example.com"
+    },
+    {
+      "id": "3",
+      "name": "Ava",
+      "email": "ava@example.com"
+    },
+    {
+      "name": "Jane Doe",
+      "email": "jane@example.com",
+      "id": "t2akuor"
+    },
+    {
+      "name": "Mandy McKenzee",
+      "email": "mandy@example.com",
+      "id": "b6pizsW"
+    },
+    {
+      "name": "Jim Downs",
+      "email": "jd@example.com",
+      "id": "wfKx2Ge"
+    },
+    {
+      "name": "Nicole Bernard",
+      "email": "Nicole@example.com",
+      "id": "BjIbbry"
+    },
+    {
+      "name": "Jane Doe",
+      "email": "jane@example.com",
+      "id": "wiRVMC0"
+    }
+  ],
+  "posts": [],
+  "comments": [
+    {
+      "postId": "1",
+      "body": "Nice article",
+      "id": 1
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+name: API Automated Quality Gate
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  api-test-pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Pull your code down onto the virtual machine
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # Step 2: Set up the Node environment (uses 2026 LTS baseline)
+      - name: Setup Node.js
+        uses: actions/allowed/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      # Step 3: Install dependencies for both your server and Newman
+      - name: Install Dependencies
+        run: |
+          npm install
+          npm install -g newman
+
+      # Step 4: Boot the server in the background using the '&' operator
+      - name: Start Mock Server (Background)
+        run: |
+          npm start &
+          echo "Server spinning up in background process..."
+
+      # Step 5: Wait for the port to actively listen before firing tests
+      - name: Wait for Server to be Ready
+        run: |
+          echo "Waiting for localhost:3000 to wake up..."
+          npx wait-on http://localhost:3000 --timeout 30000
+
+      # Step 6: Execute Newman. If any of your 17 requests fail, the pipeline exits hard.
+      - name: Run Newman API Automation Suite
+        run: |
+          newman run crud_collection.json -e local_env.json
