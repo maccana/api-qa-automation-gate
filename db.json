@@ -1,42 +1,23 @@
 {
-  "users": [
+  "posts": [
     {
-      "id": "2",
-      "name": "Maddie O'Malley",
-      "email": "her@example.com"
+      "id": 2,
+      "title": "Second Automated Test Post",
+      "author": "maccana"
     },
     {
-      "id": "3",
-      "name": "Ava",
-      "email": "ava@example.com"
+      "title": "New post",
+      "body": "Post content",
+      "userId": "1",
+      "id": 3
     },
     {
-      "name": "Jane Doe",
-      "email": "jane@example.com",
-      "id": "t2akuor"
-    },
-    {
-      "name": "Mandy McKenzee",
-      "email": "mandy@example.com",
-      "id": "b6pizsW"
-    },
-    {
-      "name": "Jim Downs",
-      "email": "jd@example.com",
-      "id": "wfKx2Ge"
-    },
-    {
-      "name": "Nicole Bernard",
-      "email": "Nicole@example.com",
-      "id": "BjIbbry"
-    },
-    {
-      "name": "Jane Doe",
-      "email": "jane@example.com",
-      "id": "wiRVMC0"
+      "title": "Newman in Action",
+      "body": "Working with Newman for API tests.",
+      "userId": "1",
+      "id": 4
     }
   ],
-  "posts": [],
   "comments": [
     {
       "postId": "1",
