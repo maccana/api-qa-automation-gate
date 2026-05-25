@@ -39,4 +39,11 @@ jobs:
 
       - name: Run Newman API Automation Suite
         run: |
-          newman run crud_collection.json -e local_env.json
+          npx newman run crud_collection.json -e local_env.json -r cli,htmlextra
+
+      - name: Archive QA Automation Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: api-qa-dashboard-report
+          path: newman/
+          retention-days: 14

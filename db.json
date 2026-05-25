@@ -16,18 +16,54 @@
       "body": "Working with Newman for API tests.",
       "userId": "1",
       "id": 4
+    },
+    {
+      "title": "New post",
+      "body": "Post content",
+      "userId": "1",
+      "id": 5
+    },
+    {
+      "title": "New post",
+      "body": "Post content",
+      "userId": "1",
+      "id": 6
+    },
+    {
+      "title": "New post",
+      "body": "Post content",
+      "userId": "1",
+      "id": 7
+    },
+    {
+      "title": "New post",
+      "body": "Post content",
+      "userId": "1",
+      "id": 8
+    },
+    {
+      "title": "New post",
+      "body": "Post content",
+      "userId": "1",
+      "id": 9
+    },
+    {
+      "title": "New post",
+      "body": "Post content",
+      "userId": "1",
+      "id": 10
     }
   ],
   "comments": [
     {
-      "postId": "1",
-      "body": "Nice article",
-      "id": 1
-    },
-        {
       "id": 5,
       "title": "All tests pass",
       "author": "maccana"
+    },
+    {
+      "postId": "1",
+      "body": "Nice article",
+      "id": 6
     }
   ]
 }
